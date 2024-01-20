@@ -35,4 +35,4 @@ Simply connect all assembled nodes with RJ45 cables, and connect the translator 
 
 Upon powering on or restting any node, the main status LED will blink once if everything is initialized correctly. If the LED continues blinking, there is a fault with initializing the CAN bus. If the LED does not blink, there is a fault with initializing the ESP32.
 
-On the Translator node, the main status will turn on and stay on after the first valid message is received from the SBC. If the LED does not turn on, there is a fault with the serial communication.
+The main status will turn on and stay on after the first valid message is received on any node. If the LED does not turn on (on the Translator node), there is a fault with the serial communication. If it does not turn on (on the Arm node), there is a fault with the CAN communication or dip switch address.

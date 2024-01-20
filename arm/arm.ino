@@ -80,6 +80,7 @@ void readCAN(int packetSize) {
 
     if (packetSize && (CAN.packetId() == readDipSwitch())) {
         digitalWrite(CAN_RX_LED_PIN, HIGH);
+        digitalWrite(MAIN_STATUS_LED_PIN, HIGH);
 
         #if DEBUG
             Serial.println("Received packet for this node.");
