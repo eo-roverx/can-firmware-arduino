@@ -4,7 +4,7 @@
 #include <Arduino.h>
 
 #define SERIAL_BAUD_RATE 115200  // bps
-#define CAN_BAUD_RATE 500E3      // Kbps
+#define CAN_BAUD_RATE 500E3      // bps
 #define TOTAL_NODE_COUNT 6
 #define BYTES_PER_NODE 2
 #define SERIAL_DATA_LENGTH (TOTAL_NODE_COUNT * BYTES_PER_NODE)    // bytes

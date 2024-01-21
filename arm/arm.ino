@@ -63,9 +63,15 @@ void setup() {
         Serial.println("CAN Initialized successfully.");
     #endif
 
+    // Blink twice to signal success and identify as an Arm node
     digitalWrite(MAIN_STATUS_LED_PIN, HIGH);
     delay(100);
     digitalWrite(MAIN_STATUS_LED_PIN, LOW);
+    delay(100);
+    digitalWrite(MAIN_STATUS_LED_PIN, HIGH);
+    delay(100);
+    digitalWrite(MAIN_STATUS_LED_PIN, LOW);
+
 }
 
 void loop() {

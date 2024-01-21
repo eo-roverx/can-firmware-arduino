@@ -4,7 +4,8 @@
 #include "settings.h"
 
 #define DEBUG false
-#define TEST_DELAY 10  // ms
+#define TEST_DELAY 10   // ms
+                        // used for testing the node
 
 char* readBytesFromSerial();
 void sendDataToOtherNodes(char* SerialData);
@@ -55,6 +56,7 @@ void setup() {
         Serial.println(SERIAL_DATA_LENGTH);
     #endif
 
+    // Blink once to signal success and identify as the Translator node
     digitalWrite(MAIN_STATUS_LED_PIN, HIGH);
     delay(100);
     digitalWrite(MAIN_STATUS_LED_PIN, LOW);
